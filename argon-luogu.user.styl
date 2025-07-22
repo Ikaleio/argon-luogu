@@ -1,7 +1,7 @@
 
 /* ==UserStyle==
 @name                 Argon Luogu Dev
-@version              20250703.09.39
+@version              20250722.09.12
 @namespace            https://userstyles.world/style/18510/argon-luogu-dev
 @description          洛谷美化样式。
 @author               d0j1a1701
@@ -1809,7 +1809,7 @@
     .theme-bg
         background none !important
 
-    .theme-fg
+    .theme-fg:not(footer *)
         acrylic-bg() if header-acrylic
         background navbar_bg_color !important unless header-acrylic
 
@@ -2033,5 +2033,5 @@
             color post_text_color !important
         .tags > .tag:not(.selected)
             background none !important
-    span:not(.tag *,.difficulty *,.toggle-tag)
+    span:not(.tag *,.difficulty *,.toggle-tag,.user-nav *,nav *)
         color sec_text_color !important
