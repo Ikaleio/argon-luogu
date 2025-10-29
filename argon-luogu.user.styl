@@ -145,7 +145,7 @@
                 color hljs_base_color !important
                 box-shadow none !important
                 .hljs-doctag,
-                .hljs-keyword,
+                .token.keyword,
                 .hljs-meta .hljs-keyword,
                 .hljs-template-tag,
                 .hljs-template-variable,
@@ -154,6 +154,7 @@
                     color hljs_keyword_color if hljs_keyword_color
                 .hljs-title,
                 .hljs-title.class_,
+                .token.function,
                 .hljs-title.class_.inherited__,
                 .hljs-title.function_
                     color hljs_function_color if hljs_function_color
@@ -162,6 +163,7 @@
                 .hljs-literal,
                 .hljs-meta,
                 .hljs-number,
+                .token.number,
                 .hljs-operator,
                 .hljs-selector-attr,
                 .hljs-selector-class,
@@ -170,13 +172,15 @@
                     color hljs_variable_color if hljs_variable_color
                 .hljs-meta .hljs-string,
                 .hljs-regexp,
+                .token.string,
                 .hljs-string
                     color hljs_string_color if hljs_string_color
                 .hljs-built_in,
-                .hljs-symbol
+                .token.punctuation
                     color hljs_symbol_color if hljs_symbol_color
                 .hljs-code,
                 .hljs-comment,
+                .token.comment,
                 .hljs-formula
                     color hljs_comment_color if hljs_comment_color
                 .hljs-name,
@@ -186,10 +190,12 @@
                     color hljs_tag_color if hljs_tag_color
                 .hljs-subst
                     color hljs_subst_color if hljs_subst_color
-                .hljs-section
+                .hljs-section,
+                .token.operator
                     color hljs_section_color if hljs_section_color
                     font-weight 700
-                .hljs-bullet
+                .hljs-bullet,
+                .token.expression
                     color hljs_bullet_color if hljs_bullet_color
                 .hljs-emphasis
                     color hljs_emphasis_color if hljs_emphasis_color
@@ -238,7 +244,7 @@
                 box-shadow none !important
 
                 .hljs-doctag,
-                .hljs-keyword,
+                .token.keyword,
                 .hljs-meta .hljs-keyword,
                 .hljs-template-tag,
                 .hljs-template-variable,
@@ -247,6 +253,7 @@
                     color hljs_keyword_color if hljs_keyword_color
                 .hljs-title,
                 .hljs-title.class_,
+                .token.function,
                 .hljs-title.class_.inherited__,
                 .hljs-title.function_
                     color hljs_function_color if hljs_function_color
@@ -254,6 +261,7 @@
                 .hljs-attribute,
                 .hljs-literal,
                 .hljs-meta,
+                .token.number,
                 .hljs-number,
                 .hljs-operator,
                 .hljs-selector-attr,
@@ -262,15 +270,18 @@
                 .hljs-variable
                     color hljs_variable_color if hljs_variable_color
                 .hljs-meta .hljs-string,
+                .token.string,
                 .hljs-regexp,
                 .hljs-string
                     color hljs_string_color if hljs_string_color
                 .hljs-built_in,
-                .hljs-symbol
+                .hljs-symbol,
+                .token.punctuation
                     color hljs_symbol_color if hljs_symbol_color
                 .hljs-code,
                 .hljs-comment,
-                .hljs-formula
+                .hljs-formula,
+                .token.comment
                     color hljs_comment_color if hljs_comment_color
                 .hljs-name,
                 .hljs-quote,
@@ -279,10 +290,12 @@
                     color hljs_tag_color if hljs_tag_color
                 .hljs-subst
                     color hljs_subst_color if hljs_subst_color
-                .hljs-section
+                .hljs-section,
+                .token.operator
                     color hljs_section_color if hljs_section_color
                     font-weight 700
-                .hljs-bullet
+                .hljs-bullet,
+                .token.expression
                     color hljs_bullet_color if hljs_bullet_color
                 .hljs-emphasis
                     color hljs_emphasis_color if hljs_emphasis_color
@@ -2045,3 +2058,4 @@
             background none !important
     span:not(.tag *,.difficulty *,.toggle-tag)
         color sec_text_color !important
+
